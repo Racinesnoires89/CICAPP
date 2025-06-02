@@ -17,9 +17,16 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <a href="index.html">
+          <a href="/index.html">
             <span class="logo-icon"><i class="fas fa-leaf"></i></span>
             <span class="logo-text">AgroVision</span>
+            <!-- Bouton hamburger -->
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
           </a>
         </div>
         <nav class="main-nav">
@@ -28,10 +35,11 @@
             <span></span>
             <span></span>
           </button>
-          <ul class="nav-list">
-            <li><a href="index.html" class="active">Accueil</a></li>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="/index.html">Accueil</a></li>
+
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle">Agriculture <i class="fas fa-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle toggle-submenu">Agriculture <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="agriculture/commerciale.html">Commerciale</a></li>
                 <li><a href="agriculture/foragere.html">Foragère</a></li>
@@ -41,26 +49,29 @@
                 <li><a href="agriculture/vivriere.html">Vivrière</a></li>
               </ul>
             </li>
+
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle">Élevage <i class="fas fa-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle toggle-submenu">Élevage <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="farming/aviculture.html">Aviculture</a></li>
-                <li><a href="farming/boviculture.html">Boviculture</a></li>
-                <li><a href="farming/cuniculture.html">Cuniculture</a></li>
-                <li><a href="farming/heliciculture.html">Héliciculture</a></li>
-                <li><a href="farming/oviculture.html">Oviculture</a></li>
-                <li><a href="farming/porciculture.html">Porciculture</a></li>
+                <li><a href="/farming/aviculture.html">Aviculture</a></li>
+                <li><a href="/farming/boviculture.html">Boviculture</a></li>
+                <li><a href="/farming/cuniculture.html">Cuniculture</a></li>
+                <li><a href="/farming/heliciculture.html">Héliciculture</a></li>
+                <li><a href="/farming/oviculture.html">Oviculture</a></li>
+                <li><a href="/farming/porciculture.html">Porciculture</a></li>
               </ul>
             </li>
-            <li><a href="about.html">À Propos</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+            <li><a href="/about.html">À Propos</a></li>
+            <li><a href="/guide.html">Guide</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </nav>
         <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
         <div class="auth-buttons">
-          <a href="login.html" class="btn btn-outline">Connexion</a>
-          <a href="register.html" class="btn btn-primary">Inscription</a>
+          <a href="/login.html" class="btn btn-outline">Connexion</a>
+          <a href="/register.html" class="btn btn-primary">Inscription</a>
         </div>
       </div>
     </div>

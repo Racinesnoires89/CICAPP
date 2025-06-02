@@ -1,30 +1,30 @@
 // Main JavaScript file for AgroVision
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Theme management
   const themeToggle = document.querySelector('.theme-toggle');
   const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-  
+
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    
+
     // Update toggle button icon
     const icon = themeToggle.querySelector('i');
     icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
   }
-  
+
   // Initialize theme
-  const savedTheme = localStorage.getItem('theme') || 
+  const savedTheme = localStorage.getItem('theme') ||
     (prefersDarkScheme.matches ? 'dark' : 'light');
   setTheme(savedTheme);
-  
+
   // Theme toggle handler
   themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     setTheme(currentTheme === 'dark' ? 'light' : 'dark');
   });
-  
+
   // System theme change handler
   prefersDarkScheme.addEventListener('change', (e) => {
     if (!localStorage.getItem('theme')) {
@@ -34,38 +34,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Header scroll effect
   const header = document.querySelector('.header');
-  
-  window.addEventListener('scroll', function() {
+
+  window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
   });
-  
+
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const mainNav = document.querySelector('.main-nav');
-  
+
   if (menuToggle) {
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function () {
       menuToggle.classList.toggle('active');
       mainNav.classList.toggle('active');
-      
+
       // Toggle ARIA expanded attribute
       const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
       menuToggle.setAttribute('aria-expanded', !isExpanded);
-      
+
       // Prevent body scrolling when menu is open
       document.body.classList.toggle('menu-open');
     });
   }
-  
+
   // Mobile dropdown toggles
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-  
+
   dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', function(e) {
+    toggle.addEventListener('click', function (e) {
       if (window.innerWidth <= 768) {
         e.preventDefault();
         const parent = this.parentElement;
@@ -73,23 +73,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
+
   // AOS initialization (Animate On Scroll)
   initAOS();
-  
+
   // Initialize testimonials slider
   initTestimonialsSlider();
-  
+
   // Newsletter form submission
   const newsletterForm = document.querySelector('.newsletter-form');
-  
+
   if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
+    newsletterForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      
+
       const emailInput = this.querySelector('input[type="email"]');
       const email = emailInput.value.trim();
-      
+
       if (validateEmail(email)) {
         // Show success message
         showNotification('success', 'Merci de vous être inscrit à notre newsletter!');
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function initAOS() {
   // Check if elements with data-aos exist
   const aosElements = document.querySelectorAll('[data-aos]');
-  
+
   if (aosElements.length > 0) {
     // Simulate AOS behavior with our own implementation
     const observerOptions = {
@@ -114,7 +114,7 @@ function initAOS() {
       rootMargin: '0px',
       threshold: 0.1
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -127,10 +127,10 @@ function initAOS() {
         }
       });
     }, observerOptions);
-    
+
     aosElements.forEach(element => {
       observer.observe(element);
-      
+
       // Set delay if data-aos-delay is present
       const delay = element.getAttribute('data-aos-delay');
       if (delay) {
@@ -140,15 +140,16 @@ function initAOS() {
   }
 }
 
+
 // Testimonials slider functionality
 function initTestimonialsSlider() {
   const slider = document.querySelector('.testimonials-slider');
-  
+
   if (slider) {
     const cards = Array.from(slider.querySelectorAll('.testimonial-card'));
     let currentIndex = 0;
     const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
-    
+
     // Auto scroll functionality
     const interval = setInterval(() => {
       currentIndex = (currentIndex + 1) % cards.length;
@@ -157,12 +158,12 @@ function initTestimonialsSlider() {
         behavior: 'smooth'
       });
     }, 5000);
-    
+
     // Clear interval when user interacts with the slider
     slider.addEventListener('mousedown', () => {
       clearInterval(interval);
     });
-    
+
     // Touch events for mobile
     slider.addEventListener('touchstart', () => {
       clearInterval(interval);
@@ -181,15 +182,15 @@ function showNotification(type, message) {
   // Create notification element
   const notification = document.createElement('div');
   notification.className = `notification notification-${type}`;
-  
+
   const icon = document.createElement('span');
   icon.className = 'notification-icon';
   icon.innerHTML = type === 'success' ? '<i class="fas fa-check-circle"></i>' : '<i class="fas fa-exclamation-circle"></i>';
-  
+
   const text = document.createElement('span');
   text.className = 'notification-text';
   text.textContent = message;
-  
+
   const closeBtn = document.createElement('button');
   closeBtn.className = 'notification-close';
   closeBtn.innerHTML = '<i class="fas fa-times"></i>';
@@ -199,26 +200,26 @@ function showNotification(type, message) {
       notification.remove();
     }, 300);
   });
-  
+
   notification.appendChild(icon);
   notification.appendChild(text);
   notification.appendChild(closeBtn);
-  
+
   // Add to the DOM
   if (!document.querySelector('.notifications-container')) {
     const container = document.createElement('div');
     container.className = 'notifications-container';
     document.body.appendChild(container);
   }
-  
+
   const container = document.querySelector('.notifications-container');
   container.appendChild(notification);
-  
+
   // Add the visible class after a small delay to trigger animation
   setTimeout(() => {
     notification.classList.add('notification-visible');
   }, 10);
-  
+
   // Auto-remove after 5 seconds
   setTimeout(() => {
     notification.classList.add('notification-hiding');
