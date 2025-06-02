@@ -3,401 +3,443 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porciculture - AgroVision</title>
+  <title>Guide Complet de la Porciculture</title>
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/farming.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/porciculture.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header header-light">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <a href="../index.html">
-            <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-            <span class="logo-text">AgroVision</span>
-          </a>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="https://images.pexels.com/photos/2364436/pexels-photo-2364436.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Logo Porciculture" class="logo-img">
+        <h1>Maître<span>Porc</span></h1>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#fondamentaux">Fondamentaux</a></li>
+        <li><a href="#elevage">Élevage</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#sante">Santé</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#contact" class="btn-primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>La Formation Complète en Porciculture</h1>
+          <p>Tous les outils et connaissances pour réussir parfaitement dans l'élevage porcin</p>
+          <div class="hero-buttons">
+            <a href="#fondamentaux" class="btn-primary">Commencer la Formation</a>
+            <a href="#contact" class="btn-secondary">Nous Contacter</a>
+          </div>
         </div>
-        <nav class="main-nav">
-          <button class="menu-toggle" aria-label="Toggle Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="nav-list">
-            <li><a href="../index.html">Accueil</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle active">Élevage <i class="fas fa-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="porciculture.html" class="active">Porciculture</a></li>
-                <li><a href="aviculture.html">Aviculture</a></li>
-                <li><a href="cuniculture.html">Cuniculture</a></li>
-                <li><a href="boviculture.html">Boviculture</a></li>
-                <li><a href="heliciculture.html">Héliciculture</a></li>
-              </ul>
-            </li>
-            <li><a href="../about.html">À Propos</a></li>
-            <li><a href="../blog.html">Blog</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="auth-buttons">
-          <a href="../auth/login.html" class="btn btn-outline">Connexion</a>
-          <a href="../auth/register.html" class="btn btn-primary">Inscription</a>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/2671089/pexels-photo-2671089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Élevage de porcs moderne">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="farming-hero">
-    <div class="farming-hero-content">
-      <h1>Porciculture</h1>
-      <p>Élevage de porcs moderne et durable pour une production de qualité</p>
-    </div>
-    <div class="farming-hero-overlay"></div>
-  </section>
-
-  <!-- Introduction Section -->
-  <section class="farming-intro">
-    <div class="container">
-      <div class="farming-intro-grid">
-        <div class="farming-intro-content" data-aos="fade-right">
-          <h2>L'Art de l'Élevage Porcin</h2>
-          <p>La porciculture, ou élevage de porcs, est une pratique agricole ancestrale qui a connu d'importantes évolutions au fil des siècles. Aujourd'hui, elle combine savoir-faire traditionnel et technologies modernes pour assurer une production durable et respectueuse du bien-être animal.</p>
-          <p>Chez AgroVision, nous accompagnons les éleveurs dans la mise en place de systèmes d'élevage porcin innovants, productifs et respectueux de l'environnement.</p>
-          <div class="farming-stats">
-            <div class="stat-item">
-              <span class="stat-number">+30%</span>
-              <span class="stat-text">d'efficacité alimentaire</span>
+  <main>
+    <section id="accueil" class="section intro">
+      <div class="container">
+        <h2 class="section-title">Bienvenue dans le Monde de la Porciculture</h2>
+        <div class="intro-content">
+          <div class="intro-text">
+            <p>La porciculture est l'élevage des porcs destinés à la production de viande et d'autres produits dérivés. Cette activité, à la fois traditionnelle et moderne, offre d'excellentes opportunités économiques lorsqu'elle est pratiquée avec méthode et connaissance.</p>
+            <p>Notre guide complet vous accompagne pas à pas vers la réussite, que vous soyez débutant ou éleveur expérimenté cherchant à perfectionner vos techniques.</p>
+          </div>
+          <div class="stats-container">
+            <div class="stat-card">
+              <span class="stat-number">30%</span>
+              <p>De rentabilité possible avec les bonnes pratiques</p>
             </div>
-            <div class="stat-item">
-              <span class="stat-number">-25%</span>
-              <span class="stat-text">d'impact environnemental</span>
+            <div class="stat-card">
+              <span class="stat-number">6-8</span>
+              <p>Mois pour un cycle d'élevage complet</p>
             </div>
-            <div class="stat-item">
-              <span class="stat-number">+40%</span>
-              <span class="stat-text">de bien-être animal</span>
+            <div class="stat-card">
+              <span class="stat-number">10-12</span>
+              <p>Porcelets par portée en moyenne</p>
             </div>
           </div>
         </div>
-        <div class="farming-intro-image" data-aos="fade-left">
-          <img src="https://images.pexels.com/photos/162801/cows-dairy-cows-milk-alpine-meadow-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Élevage porcin moderne">
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features Section -->
-  <section class="farming-features">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Nos Solutions en Porciculture</h2>
-        <p class="section-subtitle">Des approches innovantes pour un élevage porcin performant et durable</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card" data-aos="fade-up">
-          <div class="feature-icon">
-            <i class="fas fa-home"></i>
+    <section id="fondamentaux" class="section fundamentals">
+      <div class="container">
+        <h2 class="section-title">Les Fondamentaux de la Porciculture</h2>
+        <div class="cards-container">
+          <div class="info-card">
+            <div class="card-icon">🏠</div>
+            <h3>Installations</h3>
+            <p>La conception des bâtiments est essentielle pour assurer le bien-être des animaux et optimiser la production.</p>
+            <ul>
+              <li>Surface minimale de 1m² par porc adulte</li>
+              <li>Ventilation adéquate pour réguler la température</li>
+              <li>Séparation des zones d'alimentation et de repos</li>
+            </ul>
           </div>
-          <h3>Conception d'Installations</h3>
-          <p>Création d'espaces d'élevage optimisés pour le confort des animaux et l'efficacité de production, avec des systèmes de ventilation et de régulation thermique avancés.</p>
-        </div>
-        
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="feature-icon">
-            <i class="fas fa-apple-alt"></i>
+          <div class="info-card">
+            <div class="card-icon">🐖</div>
+            <h3>Races</h3>
+            <p>Le choix de la race dépend de vos objectifs de production et des conditions locales.</p>
+            <ul>
+              <li>Large White: croissance rapide, bonne prolificité</li>
+              <li>Landrace: excellente qualité de viande</li>
+              <li>Duroc: robustesse et résistance aux maladies</li>
+            </ul>
           </div>
-          <h3>Nutrition Optimisée</h3>
-          <p>Formulation de rations alimentaires équilibrées et adaptées à chaque stade de développement, optimisant la croissance tout en réduisant les coûts et l'impact environnemental.</p>
-        </div>
-        
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="feature-icon">
-            <i class="fas fa-heartbeat"></i>
+          <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Gestion</h3>
+            <p>Une bonne gestion de l'élevage est indispensable pour assurer sa rentabilité.</p>
+            <ul>
+              <li>Planification des cycles de reproduction</li>
+              <li>Suivi des performances de croissance</li>
+              <li>Gestion rigoureuse des stocks d'aliments</li>
+            </ul>
           </div>
-          <h3>Suivi Sanitaire</h3>
-          <p>Programmes de prévention et de suivi sanitaire pour garantir la santé du troupeau, minimiser l'usage d'antibiotiques et maximiser les performances.</p>
-        </div>
-        
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="feature-icon">
-            <i class="fas fa-seedling"></i>
-          </div>
-          <h3>Reproduction Maîtrisée</h3>
-          <p>Techniques de reproduction avancées pour améliorer la génétique du troupeau, augmenter la prolificité et assurer une descendance de qualité.</p>
-        </div>
-        
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="feature-icon">
-            <i class="fas fa-laptop"></i>
-          </div>
-          <h3>Gestion Numérique</h3>
-          <p>Solutions digitales pour le suivi en temps réel des performances, la traçabilité et l'optimisation des processus d'élevage.</p>
-        </div>
-        
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="feature-icon">
-            <i class="fas fa-certificate"></i>
-          </div>
-          <h3>Certification Qualité</h3>
-          <p>Accompagnement vers des certifications de qualité et des labels valorisants pour une meilleure reconnaissance sur le marché.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Process Section -->
-  <section class="farming-process">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Le Cycle d'Élevage Porcin</h2>
-        <p class="section-subtitle">Comprendre les étapes clés de la production porcine</p>
+    <section id="elevage" class="section breeding">
+      <div class="container">
+        <h2 class="section-title">Techniques d'Élevage</h2>
+        <div class="breeding-content">
+          <div class="breeding-text">
+            <h3>Le Cycle de Reproduction</h3>
+            <p>La maîtrise du cycle de reproduction est fondamentale pour optimiser la productivité de votre élevage.</p>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Gestation (114 jours)</h4>
+                  <p>Surveillance attentive de l'alimentation et du confort des truies</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Mise-bas</h4>
+                  <p>Préparation d'un environnement calme et propre</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Allaitement (3-4 semaines)</h4>
+                  <p>Nutrition renforcée pour la truie et surveillance des porcelets</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Sevrage</h4>
+                  <p>Transition alimentaire progressive pour les porcelets</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Engraissement (5-6 mois)</h4>
+                  <p>Alimentation équilibrée pour une croissance optimale</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="breeding-image">
+            <img src="https://images.pexels.com/photos/332545/pexels-photo-332545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Truie et porcelets">
+          </div>
+        </div>
       </div>
-      <div class="process-timeline">
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-number">1</div>
-          <div class="timeline-content">
-            <h3>Reproduction</h3>
-            <p>Sélection des reproducteurs, gestion des chaleurs, insémination artificielle ou monte naturelle, et suivi de gestation.</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-number">2</div>
-          <div class="timeline-content">
-            <h3>Mise-bas</h3>
-            <p>Préparation des truies, assistance à la mise-bas, soins aux porcelets nouveau-nés et gestion de l'allaitement.</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="timeline-number">3</div>
-          <div class="timeline-content">
-            <h3>Post-sevrage</h3>
-            <p>Transition alimentaire des porcelets après le sevrage, gestion des lots et suivi sanitaire rapproché.</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="timeline-number">4</div>
-          <div class="timeline-content">
-            <h3>Engraissement</h3>
-            <p>Alimentation optimisée pour la croissance, suivi des performances et préparation à la commercialisation.</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="timeline-number">5</div>
-          <div class="timeline-content">
-            <h3>Commercialisation</h3>
-            <p>Sélection des animaux prêts, préparation au transport et valorisation optimale des produits.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery Section -->
-  <section class="farming-gallery">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Galerie d'Élevage Porcin</h2>
-        <p class="section-subtitle">Découvrez nos installations et nos animaux</p>
+    <section id="nutrition" class="section nutrition">
+      <div class="container">
+        <h2 class="section-title">Nutrition et Alimentation</h2>
+        <p class="section-intro">Une alimentation adaptée est le secret d'un élevage performant. Les besoins nutritionnels varient selon l'âge et le stade physiologique des porcs.</p>
+        
+        <div class="nutrition-grid">
+          <div class="nutrition-card">
+            <h3>Porcelets (0-2 mois)</h3>
+            <ul>
+              <li><strong>Protéines:</strong> 20-22%</li>
+              <li><strong>Énergie:</strong> 3400-3600 kcal/kg</li>
+              <li><strong>Fréquence:</strong> 4-5 repas/jour</li>
+            </ul>
+            <p>Aliments hautement digestibles et riches en lactose</p>
+          </div>
+          <div class="nutrition-card">
+            <h3>Porcs en croissance (2-4 mois)</h3>
+            <ul>
+              <li><strong>Protéines:</strong> 18-20%</li>
+              <li><strong>Énergie:</strong> 3200-3400 kcal/kg</li>
+              <li><strong>Fréquence:</strong> 3 repas/jour</li>
+            </ul>
+            <p>Équilibre entre protéines et énergie pour favoriser le développement musculaire</p>
+          </div>
+          <div class="nutrition-card">
+            <h3>Porcs en finition (4-6 mois)</h3>
+            <ul>
+              <li><strong>Protéines:</strong> 16-18%</li>
+              <li><strong>Énergie:</strong> 3200-3300 kcal/kg</li>
+              <li><strong>Fréquence:</strong> 2-3 repas/jour</li>
+            </ul>
+            <p>Ration calculée pour optimiser la qualité de la viande</p>
+          </div>
+          <div class="nutrition-card">
+            <h3>Truies en gestation</h3>
+            <ul>
+              <li><strong>Protéines:</strong> 14-16%</li>
+              <li><strong>Énergie:</strong> 3000-3200 kcal/kg</li>
+              <li><strong>Fréquence:</strong> 2 repas/jour</li>
+            </ul>
+            <p>Alimentation contrôlée pour éviter l'embonpoint excessif</p>
+          </div>
+        </div>
+        
+        <div class="nutrition-tips">
+          <h3>Conseils pratiques</h3>
+          <ul>
+            <li>Privilégiez des matières premières de qualité et stockez-les dans de bonnes conditions</li>
+            <li>Distribuez l'alimentation à heures fixes pour habituer les animaux</li>
+            <li>Assurez un accès permanent à l'eau potable et fraîche</li>
+            <li>Ajustez les rations en fonction de la température ambiante</li>
+          </ul>
+        </div>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="https://images.pexels.com/photos/162801/cows-dairy-cows-milk-alpine-meadow-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Porcs en plein air">
-          <div class="gallery-caption">Élevage en plein air</div>
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://images.pexels.com/photos/4864509/pexels-photo-4864509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Porcelets">
-          <div class="gallery-caption">Porcelets en nurserie</div>
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://images.pexels.com/photos/4911712/pexels-photo-4911712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Alimentation des porcs">
-          <div class="gallery-caption">Système d'alimentation automatisé</div>
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://images.pexels.com/photos/6608298/pexels-photo-6608298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Truie avec porcelets">
-          <div class="gallery-caption">Maternité porcine</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ Section -->
-  <section class="farming-faq">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Questions Fréquentes</h2>
-        <p class="section-subtitle">Réponses à vos interrogations sur l'élevage porcin</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item" data-aos="fade-up">
-          <div class="faq-question">
-            <h3>Quels sont les principaux défis de la porciculture moderne?</h3>
-            <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+    <section id="sante" class="section health">
+      <div class="container">
+        <h2 class="section-title">Santé et Prévention</h2>
+        <div class="health-content">
+          <div class="health-image">
+            <img src="https://images.pexels.com/photos/14943901/pexels-photo-14943901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Examen vétérinaire d'un porc">
           </div>
-          <div class="faq-answer">
-            <p>Les principaux défis incluent la gestion des effluents et de leur impact environnemental, le maintien d'un haut niveau de bien-être animal, la réduction de l'usage des antibiotiques, et l'adaptation aux attentes sociétales et aux réglementations croissantes.</p>
-          </div>
-        </div>
-        
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="faq-question">
-            <h3>Quelle surface faut-il pour démarrer un élevage porcin?</h3>
-            <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-          </div>
-          <div class="faq-answer">
-            <p>La surface nécessaire dépend du type d'élevage envisagé. Pour un élevage naisseur-engraisseur de taille moyenne (environ 100 truies), il faut compter au minimum 1 hectare pour les bâtiments et installations, plus des surfaces supplémentaires pour l'épandage des effluents selon la réglementation locale.</p>
-          </div>
-        </div>
-        
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="faq-question">
-            <h3>Comment réduire l'impact environnemental d'un élevage porcin?</h3>
-            <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-          </div>
-          <div class="faq-answer">
-            <p>Plusieurs stratégies peuvent être mises en place: optimisation de l'alimentation pour réduire les rejets azotés, systèmes de traitement des effluents, méthanisation pour produire de l'énergie, bâtiments économes en énergie, et mise en place de pratiques agroécologiques sur les terres associées à l'exploitation.</p>
-          </div>
-        </div>
-        
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="faq-question">
-            <h3>Quelles races porcines privilégier pour démarrer?</h3>
-            <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-          </div>
-          <div class="faq-answer">
-            <p>Le choix dépend de l'objectif de production. Pour la production intensive, les croisements à base de Large White, Landrace et Piétrain sont courants. Pour des filières plus qualitatives ou extensives, des races comme le Duroc, le Berkshire ou des races locales peuvent être intéressantes. Nos conseillers peuvent vous aider à faire le meilleur choix selon votre projet.</p>
+          <div class="health-text">
+            <h3>La Biosécurité: Votre Première Ligne de Défense</h3>
+            <p>La prévention est toujours préférable au traitement. Un protocole de biosécurité rigoureux permet de minimiser les risques sanitaires.</p>
+            
+            <div class="health-practices">
+              <div class="practice-item">
+                <h4>Quarantaine</h4>
+                <p>Isoler les nouveaux animaux pendant 3-4 semaines avant de les introduire dans le troupeau</p>
+              </div>
+              <div class="practice-item">
+                <h4>Désinfection</h4>
+                <p>Nettoyer et désinfecter régulièrement les installations avec des produits homologués</p>
+              </div>
+              <div class="practice-item">
+                <h4>Vaccination</h4>
+                <p>Respecter un calendrier vaccinal adapté aux pathologies locales</p>
+              </div>
+              <div class="practice-item">
+                <h4>Contrôle des visiteurs</h4>
+                <p>Limiter l'accès à l'exploitation et imposer des mesures d'hygiène strictes</p>
+              </div>
+            </div>
+            
+            <div class="alert-box">
+              <h4>Signes d'alerte</h4>
+              <p>Consultez rapidement un vétérinaire si vous observez:</p>
+              <ul>
+                <li>Perte d'appétit ou changement de comportement</li>
+                <li>Toux, éternuements ou difficultés respiratoires</li>
+                <li>Diarrhée ou constipation</li>
+                <li>Fièvre ou tremblements</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="farming-cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Prêt à Développer Votre Élevage Porcin?</h2>
-        <p>Nos experts sont à votre disposition pour vous accompagner dans votre projet</p>
-        <div class="cta-buttons">
-          <a href="../contact.html" class="btn btn-primary btn-lg">Demander un Conseil</a>
-          <a href="../auth/register.html" class="btn btn-light btn-lg">Rejoindre AgroVision</a>
+    <section id="ressources" class="section resources">
+      <div class="container">
+        <h2 class="section-title">Ressources et Formation Continue</h2>
+        <div class="resources-content">
+          <div class="resources-text">
+            <p>Pour approfondir vos connaissances et rester informé des dernières avancées en porciculture, nous vous recommandons ces ressources essentielles.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <div class="resource-card">
+              <div class="resource-icon">📚</div>
+              <h3>Guides Pratiques</h3>
+              <ul>
+                <li>Manuel complet de l'éleveur porcin</li>
+                <li>Guide des maladies porcines</li>
+                <li>Cahier technique sur l'alimentation des porcs</li>
+              </ul>
+              <a href="#" class="btn-resource">Télécharger</a>
+            </div>
+            <div class="resource-card">
+              <div class="resource-icon">🎓</div>
+              <h3>Formations</h3>
+              <ul>
+                <li>Certification en gestion d'élevage porcin</li>
+                <li>Formation en insémination artificielle</li>
+                <li>Stage pratique en conduite d'élevage</li>
+              </ul>
+              <a href="#" class="btn-resource">S'inscrire</a>
+            </div>
+            <div class="resource-card">
+              <div class="resource-icon">🔬</div>
+              <h3>Recherche</h3>
+              <ul>
+                <li>Revue scientifique de production porcine</li>
+                <li>Bulletins techniques des instituts de recherche</li>
+                <li>Études de cas d'exploitations performantes</li>
+              </ul>
+              <a href="#" class="btn-resource">Consulter</a>
+            </div>
+            <div class="resource-card">
+              <div class="resource-icon">👥</div>
+              <h3>Réseau Professionnel</h3>
+              <ul>
+                <li>Association des éleveurs porcins</li>
+                <li>Forums en ligne spécialisés</li>
+                <li>Salons et conférences du secteur</li>
+              </ul>
+              <a href="#" class="btn-resource">Rejoindre</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Related Content -->
-  <section class="related-content">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Contenus Associés</h2>
-        <p class="section-subtitle">D'autres ressources pour approfondir vos connaissances</p>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contactez Nos Experts</h2>
+        <div class="contact-content">
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="votre@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <select id="subject" required>
+                  <option value="" disabled selected>Choisissez un sujet</option>
+                  <option value="conseil">Conseil technique</option>
+                  <option value="formation">Formation</option>
+                  <option value="visite">Visite d'exploitation</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Détaillez votre demande..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Envoyer la demande</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Nos Coordonnées</h3>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <p>123 Route de l'Élevage, 75000 Paris, France</p>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <p>+33 1 23 45 67 89</p>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <p>contact@maitreporc.fr</p>
+            </div>
+            <div class="contact-hours">
+              <h4>Horaires d'assistance</h4>
+              <p>Lundi - Vendredi: 8h00 - 18h00</p>
+              <p>Samedi: 9h00 - 12h00</p>
+              <p>Dimanche: Fermé</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="related-grid">
-        <div class="related-card" data-aos="fade-up">
-          <div class="related-image">
-            <img src="https://images.pexels.com/photos/7474209/pexels-photo-7474209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Alimentation porcine">
-          </div>
-          <div class="related-content">
-            <span class="related-tag">Article</span>
-            <h3>Optimiser l'Alimentation Porcine</h3>
-            <p>Stratégies nutritionnelles pour maximiser les performances tout en réduisant les coûts.</p>
-            <a href="../blog/post-alimentation-porcine.html" class="btn-text">Lire l'article <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        
-        <div class="related-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="related-image">
-            <img src="https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bien-être animal">
-          </div>
-          <div class="related-content">
-            <span class="related-tag">Guide</span>
-            <h3>Bien-être Animal en Porciculture</h3>
-            <p>Guide complet des pratiques favorisant le bien-être des porcs en élevage.</p>
-            <a href="../guides/bien-etre-porcin.html" class="btn-text">Consulter le guide <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        
-        <div class="related-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="related-image">
-            <img src="https://images.pexels.com/photos/162801/cows-dairy-cows-milk-alpine-meadow-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Formation porciculture">
-          </div>
-          <div class="related-content">
-            <span class="related-tag">Formation</span>
-            <h3>Formation en Gestion d'Élevage Porcin</h3>
-            <p>Programme complet de formation pour maîtriser tous les aspects de la production porcine.</p>
-            <a href="../formations/gestion-elevage-porcin.html" class="btn-text">Découvrir la formation <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Prêt à Démarrer Votre Aventure en Porciculture?</h2>
+          <p>Rejoignez notre communauté d'éleveurs passionnés et bénéficiez de conseils personnalisés</p>
+          <a href="#contact" class="btn-primary btn-large">Commencer Maintenant</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
       <div class="footer-content">
-        <div class="footer-column">
-          <div class="footer-logo">
-            <span class="logo-icon"><i class="fas fa-leaf"></i></span>
-            <span class="logo-text">AgroVision</span>
+        <div class="footer-logo">
+          <h3>Maître<span>Porc</span></h3>
+          <p>Excellence en porciculture depuis 2010</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#fondamentaux">Fondamentaux</a></li>
+              <li><a href="#elevage">Élevage</a></li>
+              <li><a href="#nutrition">Nutrition</a></li>
+            </ul>
           </div>
-          <p>Solutions innovantes pour l'agriculture et l'élevage modernes.</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+          <div class="footer-column">
+            <h4>Ressources</h4>
+            <ul>
+              <li><a href="#ressources">Guides</a></li>
+              <li><a href="#ressources">Formations</a></li>
+              <li><a href="#ressources">Recherche</a></li>
+              <li><a href="#ressources">Réseau</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
           </div>
         </div>
-        
-        <div class="footer-column">
-          <h3>Liens Rapides</h3>
-          <ul class="footer-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../about.html">À Propos</a></li>
-            <li><a href="../services.html">Services</a></li>
-            <li><a href="../blog.html">Blog</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Nos Services</h3>
-          <ul class="footer-links">
-            <li><a href="porciculture.html">Porciculture</a></li>
-            <li><a href="aviculture.html">Aviculture</a></li>
-            <li><a href="cuniculture.html">Cuniculture</a></li>
-            <li><a href="boviculture.html">Boviculture</a></li>
-            <li><a href="heliciculture.html">Héliciculture</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Contact</h3>
-          <ul class="contact-info">
-            <li><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Agriculture, 75000 Paris</li>
-            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
-            <li><i class="fas fa-envelope"></i> contact@agrovision.fr</li>
-          </ul>
+        <div class="footer-newsletter">
+          <h4>Restez informé</h4>
+          <p>Inscrivez-vous à notre newsletter pour recevoir nos derniers conseils et actualités</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit" class="btn-secondary">S'inscrire</button>
+          </form>
         </div>
       </div>
-      
       <div class="footer-bottom">
-        <p>&copy; 2025 AgroVision. Tous droits réservés.</p>
+        <p>&copy; 2025 MaîtrePorc. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
-  <script src="../js/farming.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
