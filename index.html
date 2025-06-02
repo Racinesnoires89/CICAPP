@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroVision - Agriculture et Élevage</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon"><i class="fas fa-leaf"></i></span>
+            <span class="logo-text">AgroVision</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Agriculture <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="agriculture/commerciale.html">Commerciale</a></li>
+                <li><a href="agriculture/foragere.html">Foragère</a></li>
+                <li><a href="agriculture/industrielle.html">Industrielle</a></li>
+                <li><a href="agriculture/maraichere.html">Maraîchère</a></li>
+                <li><a href="agriculture/rente.html">Rente</a></li>
+                <li><a href="agriculture/vivriere.html">Vivrière</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Élevage <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="farming/aviculture.html">Aviculture</a></li>
+                <li><a href="farming/boviculture.html">Boviculture</a></li>
+                <li><a href="farming/cuniculture.html">Cuniculture</a></li>
+                <li><a href="farming/heliciculture.html">Héliciculture</a></li>
+                <li><a href="farming/oviculture.html">Oviculture</a></li>
+                <li><a href="farming/porciculture.html">Porciculture</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <div class="auth-buttons">
+          <a href="auth/login.html" class="btn btn-outline">Connexion</a>
+          <a href="auth/register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">L'excellence en agriculture et élevage</h1>
+      <p class="hero-subtitle">Découvrez des techniques modernes et durables pour optimiser votre exploitation</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary btn-lg">Nos Services</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Nous Contacter</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nos Spécialités d'Agriculture</h2>
+        <p class="section-subtitle">Expertise dans différents types de cultures pour répondre à vos besoins</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-kiwi-bird"></i>
+          </div>
+          <h3>Agriculture commerciale</h3>
+          <p>Formation en élévage de volailles pour la production d'œufs et de viande de haute qualité.</p>
+          <a href="farming/aviculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-horse"></i>
+          </div>
+          <h3>Agriculture foragère</h3>
+          <p>Formation en élévage de bovins et ovins pour la production de lait et de viande de qualité supérieure.</p>
+          <a href="farming/boviculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-paw"></i>
+          </div>
+          <h3>Agriculture industrielle</h3>
+          <p>Formation en élévage de lapins avec des méthodes garantissant bien-être et rendement optimal.</p>
+          <a href="farming/cuniculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fas fa-bug"></i>
+          </div>
+          <h3>Agriculture de rente</h3>
+          <p>Formation en élévage d'escargots suivant des normes strictes pour une production gastronomique.</p>
+          <a href="farming/heliciculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <h3>Agriculture vivrière</h3>
+          <p>Formation en élévage de porcs avec des techniques modernes assurant santé et productivité.</p>
+          <a href="farming/porciculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Consultation</h3>
+          <p>Services de conseil pour optimiser la gestion et la productivité de votre exploitation.</p>
+          <a href="contact.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nos Spécialités d'Élevage</h2>
+        <p class="section-subtitle">Expertise dans différents types d'élevage pour répondre à vos besoins</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-kiwi-bird"></i>
+          </div>
+          <h3>Aviculture</h3>
+          <p>Formation en élévage de volailles pour la production d'œufs et de viande de haute qualité.</p>
+          <a href="farming/aviculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-horse"></i>
+          </div>
+          <h3>Boviculture-Oviculture</h3>
+          <p>Formation en élévage de bovins et ovins pour la production de lait et de viande de qualité supérieure.</p>
+          <a href="farming/boviculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-paw"></i>
+          </div>
+          <h3>Cuniculture</h3>
+          <p>Formation en élévage de lapins avec des méthodes garantissant bien-être et rendement optimal.</p>
+          <a href="farming/cuniculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fas fa-bug"></i>
+          </div>
+          <h3>Héliciculture</h3>
+          <p>Formation en élévage d'escargots suivant des normes strictes pour une production gastronomique.</p>
+          <a href="farming/heliciculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <h3>Porciculture</h3>
+          <p>Formation en élévage de porcs avec des techniques modernes assurant santé et productivité.</p>
+          <a href="farming/porciculture.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Consultation</h3>
+          <p>Services de conseil pour optimiser la gestion et la productivité de votre exploitation.</p>
+          <a href="contact.html" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img
+            src="https://images.pexels.com/photos/235725/pexels-photo-235725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Ferme moderne d'élevage">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h2>Notre Approche de l'Agriculture Moderne</h2>
+          <p>Chez AgroVision, nous combinons traditions agricoles et innovations technologiques pour créer des systèmes
+            d'élevage durables et productifs.</p>
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> Techniques d'élevage respectueuses du bien-être animal</li>
+            <li><i class="fas fa-check-circle"></i> Alimentation naturelle et équilibrée</li>
+            <li><i class="fas fa-check-circle"></i> Utilisation responsable des ressources</li>
+            <li><i class="fas fa-check-circle"></i> Formations et accompagnement personnalisé</li>
+          </ul>
+          <a href="about.html" class="btn btn-secondary">Découvrir Notre Histoire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Galerie de Nos Exploitations</h2>
+        <p class="section-subtitle">Découvrez nos installations modernes et nos animaux en pleine santé</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" data-aos="zoom-in">
+          <div class="product-image">
+            <img
+              src="https://images.pexels.com/photos/2310634/pexels-photo-2310634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Poules en liberté">
+          </div>
+          <div class="product-info">
+            <h3>Aviculture</h3>
+            <p>Poules élevées en plein air</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="product-image">
+            <img
+              src="https://images.pexels.com/photos/162801/cows-dairy-cows-milk-alpine-meadow-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Vaches laitières">
+          </div>
+          <div class="product-info">
+            <h3>Boviculture</h3>
+            <p>Élevage bovin de qualité</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="product-image">
+            <img
+              src="https://images.pexels.com/photos/1453533/pexels-photo-1453533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Porcs">
+          </div>
+          <div class="product-info">
+            <h3>Porciculture</h3>
+            <p>Porcs élevés dans des conditions optimales</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="product-image">
+            <img
+              src="https://images.pexels.com/photos/4192/animal-cute-fur-rabbit.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Lapins">
+          </div>
+          <div class="product-info">
+            <h3>Cuniculture</h3>
+            <p>Élevage de lapins de race</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+        <p class="section-subtitle">Découvrez les expériences de ceux qui nous font confiance</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Grâce aux conseils d'AgroVision, j'ai pu augmenter la productivité de mon élevage de porcs de 30% tout
+              en améliorant le bien-être animal."</p>
+          </div>
+          <div class="testimonial-author">
+            <img
+              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Jean Dupont">
+            <div class="author-info">
+              <h4>Jean Dupont</h4>
+              <p>Éleveur de porcs, Normandie</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"La formation en aviculture m'a permis de démarrer mon exploitation avec confiance. Le suivi personnalisé
+              a été déterminant pour mon succès."</p>
+          </div>
+          <div class="testimonial-author">
+            <img
+              src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Marie Laurent">
+            <div class="author-info">
+              <h4>Marie Laurent</h4>
+              <p>Avicultrice, Bretagne</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"L'expertise d'AgroVision en héliciculture m'a permis de développer une production d'escargots de qualité
+              gastronomique recherchée par les grands restaurants."</p>
+          </div>
+          <div class="testimonial-author">
+            <img
+              src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Pierre Lefèvre">
+            <div class="author-info">
+              <h4>Pierre Lefèvre</h4>
+              <p>Héliciculteur, Bourgogne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prêt à Transformer Votre Exploitation?</h2>
+        <p>Rejoignez notre communauté d'agriculteurs et d'éleveurs passionnés</p>
+        <div class="cta-buttons">
+          <a href="auth/register.html" class="btn btn-primary btn-lg">S'inscrire Maintenant</a>
+          <a href="contact.html" class="btn btn-light btn-lg">Nous Contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Blog Posts -->
+  <section class="recent-posts">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Articles Récents</h2>
+        <p class="section-subtitle">Restez informé des dernières tendances en agriculture et élevage</p>
+      </div>
+      <div class="posts-grid">
+        <div class="post-card" data-aos="fade-up">
+          <div class="post-image">
+            <img
+              src="https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Techniques modernes d'élevage">
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">15 Mai 2025</span>
+              <span class="post-category">Élevage</span>
+            </div>
+            <h3>Techniques Modernes d'Élevage Bovin</h3>
+            <p>Découvrez comment les nouvelles technologies transforment l'élevage de bovins...</p>
+            <a href="blog/post1.html" class="btn-text">Lire l'article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="post-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-image">
+            <img
+              src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Alimentation naturelle">
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">8 Mai 2025</span>
+              <span class="post-category">Nutrition</span>
+            </div>
+            <h3>L'Alimentation Naturelle en Aviculture</h3>
+            <p>Comment améliorer la qualité des œufs grâce à une alimentation équilibrée...</p>
+            <a href="blog/post2.html" class="btn-text">Lire l'article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="post-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="post-image">
+            <img
+              src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Développement durable">
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">1 Mai 2025</span>
+              <span class="post-category">Durabilité</span>
+            </div>
+            <h3>Pratiques Durables en Héliciculture</h3>
+            <p>Comment créer un système d'élevage d'escargots respectueux de l'environnement...</p>
+            <a href="blog/post3.html" class="btn-text">Lire l'article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Abonnez-vous à Notre Newsletter</h2>
+        <p>Recevez nos conseils d'experts et les dernières actualités du monde agricole</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Votre adresse email" required>
+          <button type="submit" class="btn btn-primary">S'abonner</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <span class="logo-icon"><i class="fas fa-leaf"></i></span>
+            <span class="logo-text">AgroVision</span>
+          </div>
+          <p>Solutions innovantes pour l'agriculture et l'élevage modernes.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Liens Rapides</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Nos Services</h3>
+          <ul class="footer-links">
+            <li><a href="farming/porciculture.html">Porciculture</a></li>
+            <li><a href="farming/aviculture.html">Aviculture</a></li>
+            <li><a href="farming/cuniculture.html">Cuniculture</a></li>
+            <li><a href="farming/boviculture.html">Boviculture</a></li>
+            <li><a href="farming/heliciculture.html">Héliciculture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Agriculture, 75000 Paris</li>
+            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+            <li><i class="fas fa-envelope"></i> contact@agrovision.fr</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AgroVision. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

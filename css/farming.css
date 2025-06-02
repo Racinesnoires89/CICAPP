@@ -1,0 +1,520 @@
+/* Farming Pages Specific Styles */
+
+/* Hero Section */
+.farming-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  padding: 0;
+}
+
+/* Different background images for each farming type */
+body:has([href="porciculture.html"].active) .farming-hero {
+  background: url('https://images.pexels.com/photos/4911690/pexels-photo-4911690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+}
+
+body:has([href="aviculture.html"].active) .farming-hero {
+  background: url('https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+}
+
+body:has([href="cuniculture.html"].active) .farming-hero {
+  background: url('https://images.pexels.com/photos/4846291/pexels-photo-4846291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+}
+
+body:has([href="boviculture.html"].active) .farming-hero {
+  background: url('https://images.pexels.com/photos/162801/cows-dairy-cows-milk-alpine-meadow-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+}
+
+body:has([href="heliciculture.html"].active) .farming-hero {
+  background: url('https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+}
+
+.farming-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.farming-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 var(--spacing-md);
+}
+
+.farming-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+}
+
+.farming-hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  color: var(--color-neutral-100);
+}
+
+/* Introduction Section */
+.farming-intro {
+  padding: var(--spacing-xxl) 0;
+  background-color: white;
+}
+
+.farming-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.farming-intro-content h2 {
+  margin-bottom: var(--spacing-md);
+  font-size: 2.25rem;
+}
+
+.farming-intro-content p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.125rem;
+  color: var(--color-neutral-700);
+  line-height: 1.6;
+}
+
+.farming-intro-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.farming-intro-image img {
+  width: 100%;
+  height: auto;
+  transition: transform var(--transition-normal);
+}
+
+.farming-intro-image:hover img {
+  transform: scale(1.05);
+}
+
+.farming-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 120px;
+  background-color: var(--color-primary-50);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  transition: transform var(--transition-fast);
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-600);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-text {
+  font-size: 0.875rem;
+  color: var(--color-neutral-700);
+}
+
+/* Features Section */
+.farming-features {
+  background-color: var(--color-neutral-100);
+  padding: var(--spacing-xxl) 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--color-primary-600);
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-card p {
+  color: var(--color-neutral-600);
+  margin-bottom: 0;
+}
+
+/* Process Section */
+.farming-process {
+  padding: var(--spacing-xxl) 0;
+  background-color: white;
+}
+
+.process-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 32px;
+  width: 4px;
+  background-color: var(--color-primary-100);
+  z-index: 1;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-number {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-primary-600);
+  color: white;
+  border-radius: var(--border-radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-content {
+  background-color: var(--color-neutral-50);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  flex: 1;
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-content h3 {
+  margin-bottom: var(--spacing-xs);
+  font-size: 1.25rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: var(--color-neutral-700);
+}
+
+/* Gallery Section */
+.farming-gallery {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-neutral-100);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: var(--spacing-md);
+  color: white;
+  font-weight: 500;
+}
+
+/* FAQ Section */
+.farming-faq {
+  padding: var(--spacing-xxl) 0;
+  background-color: white;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-neutral-50);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  background-color: var(--color-primary-50);
+  transition: background-color var(--transition-fast);
+}
+
+.faq-question:hover {
+  background-color: var(--color-primary-100);
+}
+
+.faq-question h3 {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.faq-toggle {
+  background: none;
+  border: none;
+  color: var(--color-primary-600);
+  font-size: 1rem;
+  transition: transform var(--transition-fast);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 var(--spacing-md);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal), padding var(--transition-normal);
+}
+
+.faq-item.active .faq-answer {
+  padding: var(--spacing-md);
+  max-height: 300px;
+}
+
+.faq-answer p {
+  margin-bottom: 0;
+  color: var(--color-neutral-700);
+}
+
+/* CTA Section */
+.farming-cta {
+  background-color: var(--color-primary-700);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: var(--spacing-sm);
+  font-size: 2.25rem;
+}
+
+.cta-content p {
+  color: var(--color-neutral-100);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.125rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+/* Related Content */
+.related-content {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-neutral-50);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.related-card {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.related-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.related-card:hover .related-image img {
+  transform: scale(1.05);
+}
+
+.related-content {
+  padding: var(--spacing-md);
+}
+
+.related-tag {
+  display: inline-block;
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.related-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.related-content p {
+  color: var(--color-neutral-600);
+  margin-bottom: var(--spacing-md);
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .farming-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .farming-intro-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .farming-intro-content {
+    order: 2;
+  }
+  
+  .farming-intro-image {
+    order: 1;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .farming-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .farming-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .farming-stats {
+    flex-direction: column;
+  }
+  
+  .stat-item {
+    width: 100%;
+  }
+  
+  .features-grid,
+  .gallery-grid,
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+  
+  .process-timeline::before {
+    left: 24px;
+  }
+}
